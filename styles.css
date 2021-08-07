@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #E8F2FD;
+}
+
+.navbar .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1{
+    font-weight: 900;
+    color: #253951;
+    font-size: 30px;
+}
+
+.navbar img{
+    width: 70px;
+    height: 70px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 15px;
+    font-weight: 600;
+}
+
+.navbar ul li a{
+    color: #253951;
+    font-size: 18px;
+}
+/* Navbar Styles */
+
+/*Intro Section*/
+.header{
+    height: 100vh;
+    background-color: #E8F2FD;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    /*background-color: #E8F2FD;*/
+}
+
+.intro .hl{
+    background-color: #253951;
+    width: 2px;
+    height: 400px;
+    margin: 30px;
+}
+
+.intro .text{
+    width: 700px;
+}
+
+.intro .text h1{
+    font-size: 40px;
+}
+
+.intro .text p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.intro .instructor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.intro .instructor img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.intro .instructor h1{
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+.intro .instructor p{
+    margin: 10px;
+}
+/*Intro Section*/
+
+/*Instructor Information*/
+.instructorinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 60px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+}
+
+.instructorinfo .title {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.instructorinfo .title h1{
+    font-size: 40px;
+}
+
+.instructorinfo .title hr{
+    width: 100%;
+}
+
+.instructorinfo .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructorinfo .img img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.instructorinfo .img h1{
+    font-size: 30px;
+}
+
+.instructorinfo .img p{
+    width: 600px;
+}
+
+.instructorinfo .socials{
+    font-size: 40px;
+}
+
+.instructorinfo .socials .yt{
+    color: red;
+    margin: 5px;
+}
+
+.instructorinfo .socials .ln{
+    color: #0A66C2;
+    margin: 5px;
+}
+
+
+/*Instructor Information*/
+
+/*Course Information*/
+.courseinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 60px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+}
+
+.courseinfo .title {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.courseinfo .title h1{
+    font-size: 40px;
+}
+
+.courseinfo .title hr{
+    width: 100%;
+}
+
+.courseinfo .lists ul li{
+    list-style: circle;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/*Course Information*/
+
+/*Prerequisite Information*/
+
+.prerequisiteinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 60px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 30px;
+}
+
+.prerequisiteinfo .title {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.prerequisiteinfo p{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.prerequisiteinfo .title h1{
+    font-size: 40px;
+}
+
+.prerequisiteinfo .title hr{
+    width: 100%;
+}
+
+.prerequisiteinfo .lists{
+    width: 93%;
+}
+
+.prerequisiteinfo .lists ul li{
+    list-style: circle;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/*Prerequisite Information*/
+
+/*Footer*/
+
+.footer{
+    text-align: center;
+    background-color: #E8F2FD;
+    font-size: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer p{
+    font-size: 20px;
+}
+
+.footer h1 span {
+    color: red;
+    font-size: 30px;
+}
+
+/*Footer*/
+
+/*Responsiveness*/
+
+@media only screen and (max-width: 500px) {
+    /*Intro*/
+    .intro .instructor{
+        display: none;
+    }
+
+    .intro .hl{
+        display: none;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
+    .intro .text h1{
+        font-size: 20px;
+    }
+
+    .intro .text p{
+        font-size: 15px;
+    }
+
+    /*Instructor*/
+    .instructorinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 60px;*/
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
+    }
+
+    .instructorinfo .title {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .instructorinfo .title h1{
+        font-size: 30px;
+    }
+
+    .instructorinfo .title hr{
+        width: 100%;
+    }
+    .instructorinfo .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instructorinfo .img img{
+        width: 150px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .instructorinfo .img h1{
+        font-size: 15px;
+    }
+
+    .instructorinfo .img p{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .instructorinfo .socials{
+        font-size: 30px;
+    }
+
+    .instructorinfo .socials .yt{
+        color: red;
+        margin: 5px;
+    }
+
+    .instructorinfo .socials .ln{
+        color: #0A66C2;
+        margin: 5px;
+    }
+
+    .courseinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*margin-top: 60px;*/
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 50px;
+    }
+
+    .courseinfo .title {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .courseinfo .title h1{
+        font-size: 20px;
+    }
+
+    .courseinfo .title hr{
+        width: 100%;
+    }
+
+    .courseinfo .lists ul li{
+        font-size: 10px;
+    }
+
+    .prerequisiteinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*margin-top: 60px;*/
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 50px;
+    }
+
+    .prerequisiteinfo .title {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .prerequisiteinfo .title h1{
+        font-size: 20px;
+    }
+
+    .prerequisiteinfo .title hr{
+        width: 100%;
+    }
+
+    .prerequisiteinfo .lists ul li{
+        font-size: 10px;
+    }
+    .prerequisiteinfo p{
+        font-weight: 500;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul li a{
+        font-size: 6px;
+        font-weight: 900;
+    }
+
+    .header {
+        height: 80vh;
+    }
+
+    .footer h1{
+        font-size: 10px;
+    }
+    .footer p{
+        font-size: 10px;
+    }
+
+    .footer h1 span{
+        font-size: 10px;
+    }
+}
